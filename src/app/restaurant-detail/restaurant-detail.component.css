@@ -1,0 +1,9 @@
+.menuHeading {
+    font-weight: bold;
+    margin: 6px;
+    font-size: 18px;
+  }
+  .menu {
+    /* display: flex; */
+    text-align: center;
+  }

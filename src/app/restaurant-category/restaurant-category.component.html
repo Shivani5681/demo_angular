@@ -1,0 +1,12 @@
+<div>
+    <div class="itemCard">
+      <div class="itemName" style="cursor: pointer" (click)="handleClick()">
+        <span class="fontBold">
+          {{ itemData.info.name }}
+        </span>
+      
+      </div>
+      <app-item-category  [item]="itemData"></app-item-category>
+    </div>
+  </div>
+  

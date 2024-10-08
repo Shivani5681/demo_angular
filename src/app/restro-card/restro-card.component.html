@@ -1,0 +1,14 @@
+<div class="res-card">
+
+  <img
+    class="resImage"
+    [src]="CDN_URL + resData.cloudinaryImageId"
+    alt="ResImage"
+  />
+  <h4 class="font14" style="font-weight: bold">{{ resData.name }}</h4>
+  <h5 class="font14">{{ resData.cuisines.join(", ") }}</h5>
+  <h5 class="font14">{{ resData.avgRating }}</h5>
+  <h5 class="font14">{{ resData.sla.slaString }}</h5>
+  <h5 class="font14">{{ resData.costForTwo }}</h5>
+ 
+</div>

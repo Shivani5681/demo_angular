@@ -1,0 +1,31 @@
+.itemCard {
+    width: 60%;
+    box-shadow: 2px 2px 2px 2px #e5e4e2;
+    background-color: rgb(249 250 251);
+    padding: 10px;
+    margin: 12px auto;
+    /* display: flex;
+    justify-content: space-between; */
+  }
+  .itemHeading {
+    margin: 4px;
+  }
+  .itemBody {
+    text-align: left;
+    padding: 10px;
+    margin: 12px auto;
+    border-bottom: 1px solid black;
+    /* min-height: 30px; */
+  }
+  
+  .fontBold {
+    font-weight: bold;
+  }
+  .itemName {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .itemImg {
+    /* width: 25%; */
+  }

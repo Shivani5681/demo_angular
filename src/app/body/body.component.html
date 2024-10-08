@@ -1,0 +1,23 @@
+<div class="body">
+  <div class="search-bar">
+    <input
+      class="searchInput"
+      type="text"
+      placeholder="Search..."
+      [formControl]="searchText"
+    />
+    <button class="searchBtn" (click)="filterData()">Search</button>
+    <button class="searchBtn" (click)="filterTopRated()">
+      Top Rated Restaurants
+    </button>
+    <button class="searchBtn" (click)="refreshData()">Refresh</button>
+  </div>
+
+  <div class="restaurant-container">
+    <ng-container *ngFor="let restroCard of filteredData">
+        <div class="restaurant-card" [routerLink]="'/restaurant/' + restroCard.id">
+        <app-restro-card [resData]="restroCard"></app-restro-card>
+      </div>
+    </ng-container>
+  </div>
+</div>

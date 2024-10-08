@@ -1,0 +1,20 @@
+<div *ngIf="!restaurant" class="shimmer">
+    Loading...
+  </div>
+  
+  <div *ngIf="restaurant" class="menu">
+    <h1 class="menuHeading">{{ restaurant.name }}</h1>
+    <p>
+      {{ restaurant.cuisines.join(', ') }} - {{ restaurant.costForTwo }} 
+    </p>
+    <div class="item">
+      <div *ngFor="let item of restaurant.menu; let index = index">
+        <app-restaurant-category
+          [itemData]="item"
+          [showItem]="index === showItem"
+          (toggle)="toggleShowItem(index)"
+        ></app-restaurant-category>
+      </div>
+    </div>
+  </div>
+  

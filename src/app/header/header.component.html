@@ -1,0 +1,23 @@
+<div class="header">
+  <div>
+    <img class="logo" [src]="foodLogo" />
+  </div>
+  <div class="nav-item">
+    <ul>
+      <li>
+        <a class="itemLink" routerLink="/">Home</a>
+      </li>
+      <li>
+        <a class="itemLink" routerLink="/about">About Us</a>
+      </li>
+      <li>
+        <a class="itemLink" routerLink="/contact">Contact Us</a>
+      </li>
+     
+      <li>
+        <a class="itemLink" routerLink="/cart">Cart ({{ cartItems.length }})</a>
+      </li>
+     
+    </ul>
+  </div>
+</div>
